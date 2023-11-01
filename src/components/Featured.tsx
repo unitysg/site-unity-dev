@@ -1,6 +1,7 @@
 // src/components/Featured.tsx
 import React from 'react';
 import Slider from "react-slick";
+import Image from 'next/image';
 
 const carouselData = [
   {
@@ -41,22 +42,29 @@ const settings = {
 };
 
 const Featured = () => {
-    return (
-      <section className="relative carousel-container">
-        <Slider {...settings}>
-          {carouselData.map((slide, index) => (
-            <div key={index} className="slide-item relative flex items-center justify-center h-[600px]">
-              <img src={slide.backgroundImage} alt={`Slide ${index + 1}`} className="absolute inset-0 w-full h-full object-cover" />
-              <div className="text-center text-white p-8 relative z-10 flex flex-col items-center justify-center w-full h-full">
-                <h2 className="text-4xl mb-4">{slide.mainText}</h2>
-                <p>{slide.captionText}</p>
-              </div>
+  return (
+    <section className="relative carousel-container">
+      <Slider {...settings}>
+        {carouselData.map((slide, index) => (
+          <div key={index} className="slide-item relative flex items-center justify-center h-[600px]">
+            <div className="absolute inset-0 w-full h-full">
+              <Image 
+                src={slide.backgroundImage} 
+                alt={`Slide ${index + 1}`} 
+                layout="fill" 
+                objectFit="cover" 
+                quality={100}
+              />
             </div>
-          ))}
-        </Slider>
-      </section>
-    );
-  };
-  
-  export default Featured;
-  
+            <div className="text-center text-white p-8 relative z-10 flex flex-col items-center justify-center w-full h-full">
+              <h2 className="text-4xl mb-4">{slide.mainText}</h2>
+              <p>{slide.captionText}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
+};
+
+export default Featured;

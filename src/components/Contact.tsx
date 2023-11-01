@@ -1,5 +1,6 @@
 // src/components/Contact.tsx
 import React, { ChangeEvent, FormEvent, useState } from 'react';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -86,7 +87,7 @@ const Contact: React.FC = () => {
           {isError && <p className="text-red-600 mt-4 text-center">Failed to send your message. Please try again.</p>}
         </div>
         <div className="w-full md:w-1/2 mt-12 md:mt-10 lg:mt-6">
-          <img src="/contact.jpg" alt="Contact" className="rounded-lg" />
+          <Image src="/contact.jpg" alt="Contact Unity" width={600} height={400} className="rounded-lg" />
         </div>
       </div>
     </section>

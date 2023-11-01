@@ -1,5 +1,6 @@
 // src/components/About.tsx
 import React from 'react';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex-1">
-            <img src="/about.jpg" alt="About Unity" className="rounded-lg shadow-lg" />
+            <Image src="/about.jpg" alt="About Unity" width={600} height={400} className="rounded-lg" />
           </div>
         </div>
         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
@@ -32,7 +33,7 @@ const About = () => {
           <div className="flex-1 bg-gray-100 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4">Our Clients</h3>
             <p>
-              We've worked with many clients across the globe; from startups to companies such as Walmart, Apple, Cigna, and more.  Our team specializes in the latest cutting-edge technologies.  So whether you need us for an entire project or to contract a single developer, we're ready!
+              We&apos;ve worked with many clients across the globe; from startups to companies such as Walmart, Apple, Cigna, and more.  Our team specializes in the latest cutting-edge technologies.  So whether you need us for an entire project or to contract a single developer, we&apos;re ready!
             </p>
           </div>
         </div>
