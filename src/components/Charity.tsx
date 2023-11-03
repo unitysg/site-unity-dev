@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Charity = () => {
   return (
-    <section className="py-16 px-4 md:px-0 bg-gradient-to-r from-gray-50 to-gray-200" id="charity">
+    <section className="py-16 px-4 md:px-0 bg-gradient-to-r from-green-50 to-green-200" id="charity">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col">
         <div className="md:w-1/2">
           <h2 className="text-4xl font-extrabold mb-4 inline-block">
