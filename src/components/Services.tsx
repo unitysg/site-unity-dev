@@ -7,7 +7,7 @@ const Services: React.FC = () => {
     <section className="py-16 px-4 md:px-0 bg-gradient-to-r from-gray-50 to-gray-200" id="services">
       <div className="max-w-7xl mx-auto flex flex-wrap">
         <div className="w-full md:w-1/2 lg:mt-10">
-        <Image src="/services.jpg" alt="Services" width={600} height={400} className="rounded-lg" />
+        <Image src="/services.webp" alt="Services" width={600} height={400} className="rounded-lg" />
         </div>
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-4xl font-extrabold mb-4 inline-block">

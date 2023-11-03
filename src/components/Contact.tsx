@@ -38,6 +38,9 @@ const Contact: React.FC = () => {
   return (
     <section className="py-16 px-4 md:px-0 bg-gradient-to-br from-blue-50 to-blue-100" id="contact">
       <div className="max-w-7xl mx-auto flex flex-wrap-reverse">
+        <div className="w-full md:w-1/2 mt-12 md:mt-10 lg:mt-6">
+          <Image src="/contact.webp" alt="Contact Unity" width={600} height={400} className="rounded-lg" />
+        </div>
         <div className="w-full md:w-1/2 p-8 mt-12 md:mt-0">
           <h2 className="text-4xl font-extrabold mb-4 inline-block">
             Hire <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">Unity</span>
@@ -85,9 +88,6 @@ const Contact: React.FC = () => {
           </form>
           {isSubmitted && <p className="text-green-600 mt-4 text-center">Your message has been sent!</p>}
           {isError && <p className="text-red-600 mt-4 text-center">Failed to send your message. Please try again.</p>}
-        </div>
-        <div className="w-full md:w-1/2 mt-12 md:mt-10 lg:mt-6">
-          <Image src="/contact.jpg" alt="Contact Unity" width={600} height={400} className="rounded-lg" />
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Featured from '../components/Featured';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Services from '../components/Services';
+import Charity from '../components/Charity';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Projects />
       <Services />
+      <Charity />
       <Contact />
     </div>
   );

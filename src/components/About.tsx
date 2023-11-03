@@ -20,7 +20,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex-1">
-            <Image src="/about.jpg" alt="About Unity" width={600} height={400} className="rounded-lg" />
+            <Image src="/about.webp" alt="About Unity" width={600} height={400} className="rounded-lg" />
           </div>
         </div>
         <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
