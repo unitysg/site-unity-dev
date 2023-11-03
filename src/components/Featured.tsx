@@ -46,7 +46,7 @@ const Featured = () => {
     <section className="relative carousel-container">
       <Slider {...settings}>
         {carouselData.map((slide, index) => (
-          <div key={index} className="slide-item relative flex items-center justify-center h-[600px]">
+          <div key={index} className="slide-item relative flex items-start justify-start h-[800px]">
             <div className="absolute inset-0 w-full h-full">
               <Image 
                 src={slide.backgroundImage} 
@@ -56,7 +56,7 @@ const Featured = () => {
                 quality={100}
               />
             </div>
-            <div className="text-center text-white p-8 relative z-10 flex flex-col items-center justify-center w-full h-full">
+            <div className="text-white p-8 relative z-10 flex flex-col items-start justify-center w-1/3 bg-black bg-opacity-80 rounded-lg ml-48 mt-48 md:ml-200 md:mt-200">
               <h2 className="text-4xl mb-4">{slide.mainText}</h2>
               <p>{slide.captionText}</p>
             </div>
